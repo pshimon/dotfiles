@@ -1,0 +1,78 @@
+local ls = require("luasnip")
+local s = ls.snippet
+local sn = ls.snippet_node
+local t = ls.text_node
+local i = ls.insert_node
+local f = ls.function_node
+local d = ls.dynamic_node
+local fmt = require("luasnip.extras.fmt").fmt
+local fmta = require("luasnip.extras.fmt").fmta
+local rep = require("luasnip.extras").rep
+return {
+  s({trig="env", snippetType="autosnippet"},
+    fmta(
+      [[
+        \begin{<>}
+            <>
+        \end{<>}
+      ]],
+      {
+        i(1),
+        i(2),
+        rep(1),  -- this node repeats insert node i(1)
+      }
+    )
+  ),
+  s({trig="eq", dscr=""},
+    fmta(
+      [[
+        \begin{equation}
+           \label {<>}
+           <>
+        \end{equation}
+      ]],
+      { 
+        i(1),
+        i(2),
+      }
+    ) 
+  ),
+  s({trig="eqs", dscr=""},
+    fmta(
+      [[
+        \begin{equation}
+           \label {<>}
+           \begin{split}
+           <>
+           \end{split}
+        \end{equation}
+      ]],
+      { 
+        i(1),
+        i(2),
+      }
+    ) 
+  ),
+  -- Example use of insert node placeholder text
+  s({trig="hr", dscr="The hyperref package's href{}{} command (for url links)"},
+    fmta(
+      [[\href{<>}{<>}]],
+      {
+        i(1, "url"),
+        i(2, "display name"),
+      }
+    )
+  ),
+  s({trig=",l", snippetType="autosnippet"},
+    {
+      t("\\label"),
+    }
+  ),
+
+  s({trig=",i", snippetType="autosnippet"},
+    {
+      t("\\item"),
+    }
+  ),
+}
+
