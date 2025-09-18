@@ -23,7 +23,7 @@ return {
       }
     )
   ),
-  s({trig="eq", dscr=""},
+  s({trig="eq", dscr="equation"},
     fmta(
       [[
         \begin{equation}
@@ -37,7 +37,7 @@ return {
       }
     ) 
   ),
-  s({trig="eqs", dscr=""},
+  s({trig="eqs", dscr="equations"},
     fmta(
       [[
         \begin{equation}
@@ -73,6 +73,47 @@ return {
     {
       t("\\item"),
     }
+  ),
+	s({ trig = "ft", dscr = "footnote" }, {
+		t("\\footnote{ "), -- remember: backslashes need to be escaped
+		i(1),
+		t("}"),
+	}),
+  s({trig="it", dscr="itemize"},
+    fmta(
+      [[
+        \begin{itemize}
+           <>
+        \end{itemize}
+      ]],
+      { 
+        i(1),
+      }
+    ) 
+  ),
+  s({trig="en", dscr="enumerate"},
+    fmta(
+      [[
+        \begin{enumerate}
+           <>
+        \end{enumerate}
+      ]],
+      { 
+        i(1),
+      }
+    ) 
+  ),
+  s({trig="de", dscr="description"},
+    fmta(
+      [[
+        \begin{description}
+           <>
+        \end{description}
+      ]],
+      { 
+        i(1),
+      }
+    ) 
   ),
 }
 
