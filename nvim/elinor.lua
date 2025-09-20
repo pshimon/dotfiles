@@ -23,7 +23,7 @@ vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
 
 vim.opt.termguicolors = true
-vim.cmd('colorscheme blue')
+vim.cmd('colorscheme evening')
 
 vim.cmd('syntax enable')
 
