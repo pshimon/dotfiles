@@ -7,6 +7,9 @@ vim.opt.smartcase = true
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.showmode = true
+vim.opt.ruler        = true	  -- shows cursor position in current line
+vim.opt.wrap         = true   -- wrap long lines
+vim.opt.linebreak    = true   -- break lines at words
 
 
 vim.opt.clipboard = 'unnamedplus'
@@ -22,8 +25,9 @@ vim.opt.smartindent = true
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
 
-vim.opt.termguicolors = true
---vim.cmd('colorscheme blue')
+if vim.fn.has('termguicolors') == 1 then
+  vim.opt.termguicolors = true
+end
 vim.cmd('colorscheme evening')
 
 vim.cmd('syntax enable')
