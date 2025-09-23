@@ -9,4 +9,13 @@ return {
 	s({ trig = ";ap", snippetType = "autosnippet" }, {
 		t("\\approx"),
 	}),
+	s({ trig = ",p", snippetType = "autosnippet" }, {
+		t("\\partial"),
+	}),
+	s({ trig = ";ra", snippetType = "autosnippet" }, {
+		t("\\rightarrow"),
+	}),
+	s({ trig = ";la", snippetType = "autosnippet" }, {
+		t("\\leftarrow"),
+	}),
 }
