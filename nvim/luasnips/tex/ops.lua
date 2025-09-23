@@ -18,4 +18,7 @@ return {
 	s({ trig = ";la", snippetType = "autosnippet" }, {
 		t("\\leftarrow"),
 	}),
+	s({ trig = ",t", snippetType = "autosnippet" }, {
+		t("\\times"),
+	}),
 }

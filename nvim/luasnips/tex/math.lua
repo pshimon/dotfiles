@@ -41,4 +41,14 @@ return {
 			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
 		)
 	),
+	s(
+		{ trig = "s", dscr = "Expands 's' into 'sqrt{}'" },
+		fmt(
+			"\\sqrt{<>}",
+			{
+				i(1),
+			},
+			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
+		)
+	),
 }
