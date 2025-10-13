@@ -21,4 +21,10 @@ return {
 	s({ trig = ",t", snippetType = "autosnippet" }, {
 		t("\\times"),
 	}),
+	s({ trig = ",d", snippetType = "autosnippet" }, {
+		t("\\dot"),
+	}),
+	s({ trig = ",v", snippetType = "autosnippet" }, {
+		t("\\vec"),
+	}),
 }
