@@ -51,4 +51,14 @@ return {
 			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
 		)
 	),
+	s(
+		{ trig = "i", dscr = "Expands 'i' into 'indices{}'" },
+		fmt(
+			"\\indices{<>}",
+			{
+				i(1),
+			},
+			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
+		)
+	),
 }

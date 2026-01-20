@@ -23,6 +23,18 @@ return {
       }
     )
   ),
+  s({trig="al", dscr="eqs with numbered lines"},
+    fmta(
+      [[
+        \begin{align}
+           <>
+        \end{align}
+      ]],
+      { 
+        i(1),
+      }
+    ) 
+  ),
   s({trig="eq", dscr="equation"},
     fmta(
       [[
