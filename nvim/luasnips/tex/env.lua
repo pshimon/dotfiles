@@ -75,17 +75,48 @@ return {
       }
     )
   ),
-  s({trig=",l", snippetType="autosnippet"},
+  s({trig=";l", snippetType="autosnippet"},
     {
       t("\\label"),
     }
   ),
 
-  s({trig=",i", snippetType="autosnippet"},
+  s({trig=";s", snippetType="autosnippet"},
+    {
+      t("\\section"),
+    }
+  ),
+
+  s({trig=";S", snippetType="autosnippet"},
+    {
+      t("\\subsection"),
+    }
+  ),
+
+  s({trig=";i", snippetType="autosnippet"},
     {
       t("\\item"),
     }
   ),
+
+  s({trig=";r", snippetType="autosnippet"},
+    {
+      t("\\ref"),
+    }
+  ),
+
+  s({trig=";er", snippetType="autosnippet"},
+    {
+      t("\\eqref"),
+    }
+  ),
+
+  s({trig=";c", snippetType="autosnippet"},
+    {
+      t("\\cite"),
+    }
+  ),
+
 	s({ trig = "ft", dscr = "footnote" }, {
 		t("\\footnote{ "), -- remember: backslashes need to be escaped
 		i(1),
