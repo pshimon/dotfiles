@@ -31,4 +31,10 @@ return {
 	s({ trig = ",n", snippetType = "autosnippet" }, {
 		t("\\nabla"),
 	}),
+	s({ trig = ",>", snippetType = "autosnippet" }, {
+		t("\\rangle"),
+	}),
+	s({ trig = ",<", snippetType = "autosnippet" }, {
+		t("\\langle"),
+	}),
 }

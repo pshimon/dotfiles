@@ -10,6 +10,11 @@ return {
 		i(1),
 		t("}"),
 	}),
+	s({ trig = "mc", dscr = "Expands 'mb' into 'mathcal{}'" }, {
+		t("\\mathcal{"), -- remember: backslashes need to be escaped
+		i(1),
+		t("}"),
+	}),
 	s({ trig = "md", dscr = "Expands 'md' into '\\[ \\]'" }, {
 		t("\\[ "), -- remember: backslashes need to be escaped
 		i(1),
