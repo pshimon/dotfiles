@@ -77,19 +77,25 @@ return {
   ),
   s({trig=";l", snippetType="autosnippet"},
     {
-      t("\\label"),
+      t("\\label{"),
+		i(1),
+		t("}"),
     }
   ),
 
   s({trig=";s", snippetType="autosnippet"},
     {
-      t("\\section"),
+      t("\\section{"),
+		i(1),
+		t("}"),
     }
   ),
 
   s({trig=";S", snippetType="autosnippet"},
     {
-      t("\\subsection"),
+      t("\\subsection{"),
+		i(1),
+		t("}"),
     }
   ),
 
@@ -101,19 +107,25 @@ return {
 
   s({trig=";r", snippetType="autosnippet"},
     {
-      t("\\ref"),
+      t("\\ref{"),
+		i(1),
+		t("}"),
     }
   ),
 
   s({trig=";er", snippetType="autosnippet"},
     {
-      t("\\eqref"),
+      t("\\eqref{"),
+		i(1),
+		t("}"),
     }
   ),
 
   s({trig=";c", snippetType="autosnippet"},
     {
-      t("\\cite"),
+      t("\\cite{"),
+		i(1),
+		t("}"),
     }
   ),
 
