@@ -25,6 +25,9 @@ return {
 	s({ trig = ",v", snippetType = "autosnippet" }, {
 		t("\\vec"),
 	}),
+	s({ trig = ",h", snippetType = "autosnippet" }, {
+		t("\\hat"),
+	}),
 	s({ trig = ",c", snippetType = "autosnippet" }, {
 		t("\\cdot"),
 	}),
