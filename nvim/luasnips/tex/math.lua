@@ -66,4 +66,34 @@ return {
 			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
 		)
 	),
+	s(
+		{ trig = "b", dscr = "Expands 'i' 'bra'" },
+		fmt(
+			"\\langle{<>}|",
+			{
+				i(1),
+			},
+			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
+		)
+	),
+	s(
+		{ trig = "n", dscr = "Expands 'n' 'norm'" },
+		fmt(
+			"\\|{<>}\\|",
+			{
+				i(1),
+			},
+			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
+		)
+	),
+	s(
+		{ trig = "k", dscr = "Expands 'k' 'ket'" },
+		fmt(
+			"|{<>}\\rangle",
+			{
+				i(1),
+			},
+			{ delimiters = "<>" } -- manually specifying angle bracket delimiters
+		)
+	),
 }
