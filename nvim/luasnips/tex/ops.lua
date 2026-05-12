@@ -19,6 +19,9 @@ return {
 	s({ trig = ",t", snippetType = "autosnippet" }, {
 		t("\\times"),
 	}),
+	s({ trig = ",o", snippetType = "autosnippet" }, {
+		t("\\otimes"),
+	}),
 	s({ trig = ",d", snippetType = "autosnippet" }, {
 		t("\\dot"),
 	}),
@@ -39,5 +42,11 @@ return {
 	}),
 	s({ trig = ",<", snippetType = "autosnippet" }, {
 		t("\\langle"),
+	}),
+	s({ trig = ",~", snippetType = "autosnippet" }, {
+		t("\\tilde"),
+	}),
+	s({ trig = ",+", snippetType = "autosnippet" }, {
+		t("\\oplus"),
 	}),
 }

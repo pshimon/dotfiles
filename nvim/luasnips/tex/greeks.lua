@@ -176,4 +176,14 @@ s({trig="'Om", snippetType="autosnippet"},
     t("\\Omega"),
   }
 ),
+s({trig="'hb", snippetType="autosnippet"},
+  {
+    t("\\hbar"),
+  }
+),
+s({trig="'in", snippetType="autosnippet"},
+  {
+    t("\\infty"),
+  }
+),
 }
