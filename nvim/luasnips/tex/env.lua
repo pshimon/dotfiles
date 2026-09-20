@@ -99,6 +99,14 @@ return {
     }
   ),
 
+  s({trig=";p", snippetType="autosnippet"},
+    {
+      t("\\paragraph{"),
+		i(1),
+		t("}"),
+    }
+  ),
+
   s({trig=";i", snippetType="autosnippet"},
     {
       t("\\item"),
