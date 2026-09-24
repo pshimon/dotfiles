@@ -49,4 +49,22 @@ return {
 	s({ trig = ",+", snippetType = "autosnippet" }, {
 		t("\\oplus"),
 	}),
+	s({ trig = ",(", snippetType = "autosnippet" }, {
+		t("\\left("),
+	}),
+	s({ trig = ",)", snippetType = "autosnippet" }, {
+		t("\\right)"),
+	}),
+	s({ trig = ",[", snippetType = "autosnippet" }, {
+		t("\\left["),
+	}),
+	s({ trig = ",]", snippetType = "autosnippet" }, {
+		t("\\right]"),
+	}),
+	s({ trig = ",{", snippetType = "autosnippet" }, {
+		t("\\left\\{"),
+	}),
+	s({ trig = ",}", snippetType = "autosnippet" }, {
+		t("\\right\\}"),
+	}),
 }
