@@ -186,4 +186,19 @@ s({trig="'in", snippetType="autosnippet"},
     t("\\infty"),
   }
 ),
+s({trig="'A", snippetType="autosnippet"},
+  {
+    t("\\mathcal{A}"),
+  }
+),
+s({trig="'H", snippetType="autosnippet"},
+  {
+    t("\\mathcal{H}"),
+  }
+),
+s({trig="'Lg", snippetType="autosnippet"},
+  {
+    t("\\mathcal{L}"),
+  }
+),
 }
