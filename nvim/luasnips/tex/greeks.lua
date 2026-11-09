@@ -41,6 +41,11 @@ s({trig="'ep", snippetType="autosnippet"},
     t("\\epsilon"),
   }
 ),
+s({trig="'ve", snippetType="autosnippet"},
+  {
+    t("\\varepsilon"),
+  }
+),
 s({trig="'ze", snippetType="autosnippet"},
   {
     t("\\zeta"),
@@ -56,6 +61,11 @@ s({trig="'th", snippetType="autosnippet"},
     t("\\theta"),
   }
 ),
+s({trig="'vt", snippetType="autosnippet"},
+  {
+    t("\\vartheta"),
+  }
+),
 s({trig="'Th", snippetType="autosnippet"},
   {
     t("\\Theta"),
@@ -69,6 +79,11 @@ s({trig="'io", snippetType="autosnippet"},
 s({trig="'ka", snippetType="autosnippet"},
   {
     t("\\kappa"),
+  }
+),
+s({trig="'vk", snippetType="autosnippet"},
+  {
+    t("\\varkappa"),
   }
 ),
 s({trig="'la", snippetType="autosnippet"},
@@ -106,6 +121,11 @@ s({trig="'pi", snippetType="autosnippet"},
     t("\\pi"),
   }
 ),
+s({trig="'vp", snippetType="autosnippet"},
+  {
+    t("\\varpi"),
+  }
+),
 s({trig="'Pi", snippetType="autosnippet"},
   {
     t("\\Pi"),
@@ -116,9 +136,19 @@ s({trig="'rh", snippetType="autosnippet"},
     t("\\rho"),
   }
 ),
+s({trig="'vr", snippetType="autosnippet"},
+  {
+    t("\\varrho"),
+  }
+),
 s({trig="'si", snippetType="autosnippet"},
   {
     t("\\sigma"),
+  }
+),
+s({trig="'vs", snippetType="autosnippet"},
+  {
+    t("\\varsigma"),
   }
 ),
 s({trig="'Si", snippetType="autosnippet"},
@@ -144,6 +174,11 @@ s({trig="'Up", snippetType="autosnippet"},
 s({trig="'ph", snippetType="autosnippet"},
   {
     t("\\phi"),
+  }
+),
+s({trig="'vf", snippetType="autosnippet"},
+  {
+    t("\\varphi"),
   }
 ),
 s({trig="'Ph", snippetType="autosnippet"},
